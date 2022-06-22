@@ -1,0 +1,25 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@0,400;500;600;0,700;1,400&family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+
+//modules
+@import 'modules/header';
+@import 'modules/solution';
+@import 'modules/services';
+@import 'modules/footer';
+@import 'modules/breadcrumb';
+@import 'modules/training';
+@import 'modules/single-training';
+
+//bootstrap
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/grid';
+
+//common styles
+@import 'global';
+@import 'common';
+@import 'media-query';
+
+
+

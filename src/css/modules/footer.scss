@@ -1,0 +1,17 @@
+.footer {
+  padding: 23px 0;
+  background-color: #3F4750;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+  }
+}

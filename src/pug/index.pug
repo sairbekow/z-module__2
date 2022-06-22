@@ -1,0 +1,25 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        title z-module_2
+        include mixins
+    body
+        include header
+        div.container
+            section.solution
+                div.solution__block
+                    h1.solution__title.title Создаем решения
+                    h2.solution__subtitle.title Для роста бизнеса
+                    p.solution__text На основе анализа данных с алгоритмами реализации
+                    button.solution__btn.btn Обсудить проблему
+                ul.solution__list
+                    +cubeListItems(['Как найти точки роста и определить цели?',
+                      'Как избежать проблем на старте нового бизнеса?',
+                      'Как увеличить прибыль, управляя ценами?',
+                      'Как не попасть в "черную дыру" затрат на продвижение?'])
+            section.services-links
+                h2.services-links__title.title Услуги
+        include footer

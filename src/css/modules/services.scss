@@ -1,0 +1,81 @@
+.services {
+  background-image: url('../assets/images/bg-services.svg');
+  background-repeat: no-repeat;
+  background-position: right 124px;
+  
+  &__inner {
+    padding-top: 71px;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: 98px;
+    left: -31px;
+    z-index: -1;
+  }
+
+  &__title {
+    max-width: 1046px;
+    margin-top: 42px;
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  &__list {
+    margin-top: 33px;
+    padding-left: 41px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 41px;
+  }
+
+  &-description {
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__list {
+      margin-top: 12px;
+      padding-left: 75px;
+    }
+
+    &__title {
+      margin-top: 71px;
+    }
+
+    &__text {
+      max-width: 1155px;
+      white-space: pre-line;
+      margin-top: 16px;
+      margin-left: 16px;
+      line-height: 22px;
+
+      span {
+        color: #5391DC;
+      }
+    }
+  }
+
+  &-links {
+    padding-top: 37px;
+    padding-bottom: 99px;
+
+    &__title {
+      margin-left: 58px;
+      margin-bottom: 84px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+  &__form {
+    padding: 161px 0 93px;
+  }
+}
+
+//media queries
+

@@ -1,0 +1,96 @@
+.training {
+  font-size: 17px;
+  line-height: 20px;
+
+  &__inner {
+    padding-top: 71px;
+  }
+
+  &__title {
+    max-width: 1010px;
+    margin-top: 42px;
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  &__text {
+    margin-top: 23px;
+    margin-bottom: 27px;
+
+    p:first-child {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 44px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 41px;
+
+      span {
+        line-height: 20px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-left: 42px;
+    margin-top: 57px;
+    padding: 14px 88px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-image: url('../assets/images/icons/arrow.svg');
+      right: 25px;
+      top: 14px;
+    }
+  }
+
+  &-program {
+    margin-top: 162px;
+
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__subtitle {
+      margin-top: 45px;
+      margin-bottom: 25px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__list {
+      padding-left: 42px;
+    }
+
+    &__tools-list {
+      margin-top: 27px;
+    }
+
+    &__cases-text {
+      padding-left: 42px;
+    }
+
+    &__bonuses-text {
+      white-space: pre-line;
+      padding-left: 45px;
+      margin-top: -21px;
+    }
+  }
+
+  &__form {
+    padding: 133px 0 91px;
+  }
+}

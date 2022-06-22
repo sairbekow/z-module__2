@@ -1,0 +1,24 @@
+header.header
+    div.container
+        div.header__inner
+            img.logo(src=require('../assets/images/icons/logo.svg'))
+            nav.menu
+                ul.menu__list
+                    li.menu__item
+                        a.menu__link(href='/') Консультации
+                    li.menu__item
+                        a.menu__link(href='/services.html') Услуги
+                    li.menu__item
+                        a.menu__link(href='/single-training.html') Трениннги
+                    li.menu__item
+                        a.menu__link Блог
+                div.networks
+                    a.networks-item
+                        img(src=require('../assets/images/icons/facebook.svg'))
+                    a.networks-item
+                        img(src=require('../assets/images/icons/whatsapp.svg'))
+                    a.networks-item
+                        img(src=require('../assets/images/icons/telegram.svg'))
+            button.burger
+                img.burger__img(src=require('../assets/images/icons/burger.svg'))
+            nav.burger-menu

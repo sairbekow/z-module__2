@@ -1,0 +1,19 @@
+.breadcrumb {
+  display: flex;
+
+  &__item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+
+    &:not(:last-child) {
+      color: #9FA7B0;
+      margin-right: 16px;
+    }
+
+    span {
+      display: inline-block;
+      padding-left: 16px;
+    }
+  }
+}
