@@ -3,7 +3,7 @@
     width: 1170px;
   }
 
-  .single-training {
+  .training-list {
     &__item {
       &-left {
         width: 47%;
@@ -19,6 +19,16 @@
 @media screen and (max-width: 1199px) {
   .container {
     width: 960px;
+  }
+
+  .consultation {
+    &__list {
+      padding: 0;
+
+      li {
+        width: 340px;
+      }
+    }
   }
 
   .menu {
@@ -40,7 +50,35 @@
     width: 720px;
   }
 
-  .single-training {
+  .puzzle-block {
+    &__first {
+      display: none;
+    }
+
+    .hidden-block {
+      display: flex;
+    }
+
+    &__second {
+      &-top {
+        flex-direction: column;
+
+        a {
+          display: block;
+
+          p {
+            max-width: 253px;
+          }
+        }
+
+        img {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .training-list {
     &__item {
       padding: 35px;
 
@@ -83,26 +121,61 @@
     width: 540px;
   }
 
+  .services-links__title {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .consultation {
+
+    &__block {
+      padding-bottom: 130px;
+      padding-top: 0;
+      padding-left: 0;
+    }
+
+    &__list {
+      width: 100%;
+      margin-bottom: 80px;
+      flex-wrap: nowrap;
+      gap: 35px;
+
+      li {
+        width: 100%;
+        margin-bottom: 0 !important;
+
+        span {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   .breadcrumb {
     display: none;
   }
 
-  .single-training {
+  .training-list {
     &__list {
       margin-top: 0;
     }
 
     &__item {
+      &-inner {
+        flex-direction: column;
+      }
+
       &-mobile-list {
         display: flex !important;
       }
 
       &-left {
+        margin-top: 30px;
         width: 100%;
       }
 
       &-right {
-        display: none;
+        width: 100%;
       }
     }
   }
@@ -136,8 +209,28 @@
     padding: 0 15px;
   }
 
+  .puzzle-block {
+    &__second-top {
+      height: 300px;
 
-  .single-training {
+      p {
+        max-width: 495px;
+      }
+    }
+
+    &__second-bottom {
+      height: 300px;
+      margin-bottom: 15px;
+      margin-left: 0 !important;
+
+      p {
+        max-width: 495px;
+      }
+    }
+  }
+
+
+  .training-list {
     &__item {
       padding: 20px;
 

@@ -23,7 +23,7 @@ module.exports = {
       'pug/services.pug',
       'pug/index.pug',
       'pug/training.pug',
-      'pug/single-training.pug',
+      'pug/training-list.pug',
       'pug/mixins.pug',
     ]
   },
@@ -36,7 +36,7 @@ module.exports = {
       filename: 'index.html',
     }),
     new HtmlWebpackPlugin({
-      template: 'pug/single-training.pug',
+      template: 'pug/training-list.pug',
       filename: 'single-training.html',
     }),
     new HtmlWebpackPlugin({

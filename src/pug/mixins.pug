@@ -1,9 +1,14 @@
 mixin formElement
     form.form
         div.form__inner
-            input.form__input(placeholder="Ваше имя")
-            input.form__input(placeholder="Email")
+            div.form__input-block
+                input.form__input.form__username(placeholder="Ваше имя")
+                span.input-warning поле обязательно*
+            div.form__input-block
+                input.form__input.form__email(placeholder="Email")
+                span.input-warning поле обязательно*
             button.form__btn.btn(type="submit") Получить консультацию
+            p.form__message Ваша заявка успешно отправлена!
 
 mixin pointListItems(values)
     each value in values

@@ -12,7 +12,6 @@ body {
   padding: 0 15px;
 }
 
-
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -50,9 +49,10 @@ a {
     padding: 78px 53px;
     display: flex;
     flex-direction: column;
-    gap: 21px;
+    gap: 2px;
     border-radius: 20px;
-    box-shadow: 4px 4px 20px rgba(40, 44, 55, 0.2);  }
+    box-shadow: 4px 4px 20px rgba(40, 44, 55, 0.2);
+  }
 
   &__input {
     width: 100%;
@@ -68,6 +68,17 @@ a {
   &__btn {
     width: 100%;
     padding: 14px 0;
+  }
+
+  &__message {
+    opacity: 0;
+    margin-top: 30px;
+    margin-bottom: -55px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #30B01E;
   }
 }
 
@@ -104,4 +115,10 @@ a {
   }
 }
 
+.gap-15 {
+  gap: 15px;
+}
 
+.open-sidebar-js {
+  overflow: hidden;
+}

@@ -1,4 +1,4 @@
-.single-training {
+.training-list {
 
   &__inner {
     padding-top: 71px;
@@ -14,10 +14,13 @@
 
   &__item {
     padding: 39px 76px 37px 38px;
-    display: flex;
-    justify-content: space-between;
     box-shadow: 4px 4px 20px rgba(40, 44, 55, 0.2);
     border-radius: 20px;
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
 
     &-title {
       max-width: 503px;
@@ -27,7 +30,6 @@
     }
 
     &-text {
-      margin-bottom: 31px;
 
       & > p {
         margin-bottom: 5px;
@@ -35,6 +37,8 @@
     }
 
     &-btn {
+      display: inline-block;
+      margin-top: 31px;
       padding: 14px 95px 14px 23px;
       position: relative;
 
@@ -58,12 +62,11 @@
       }
     }
 
-
     &-list {
       max-width: 503px;
     }
 
-    &-mobile-list.single-training__item-list {
+    &-mobile-list.trainings__item-list {
       display: none;
       margin-bottom: 25px;
     }

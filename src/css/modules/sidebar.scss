@@ -1,0 +1,59 @@
+.sidebar {
+  width: 100%;
+  overflow: auto;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  background: #fff;
+  transition-duration: .5s;
+
+  &.open-js {
+    right: 0;
+    transition-duration: .5s;
+  }
+
+  &__block {
+    margin-top: 98px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 64px;
+    height: 69px;
+    display: inline-block;
+  }
+
+  &__img {
+    margin-left: 28px;
+    margin-top: 24px;
+  }
+
+  &__menu {
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 80px;
+    margin-bottom: 116px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  &__networks {
+    width: 152px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

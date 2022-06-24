@@ -1,0 +1,18 @@
+div.overlay
+    div.modal-request
+        button.modal-request__close-btn(type='button')
+            img(src=require('../assets/images/icons/close.svg'))
+        div.modal-request__block
+            h4.modal-request__title Оставьте заявку
+            form.modal-request__form
+                div.modal-request__input-block
+                    input#username-field.modal-request__input(placeholder='Ваше имя' type='text')
+                    span.input-warning поле обязательно*
+                div.modal-request__input-block
+                    input#email-field.modal-request__input(placeholder='Email' type='email')
+                    span.input-warning поле обязательно*
+                div.modal-request__input-block
+                    textarea#textarea-field.modal-request__textarea(placeholder='Пожалуйста опишите вашу проблему')
+                    span.input-warning поле обязательно*
+                button.modal-request__btn.btn(type='submit') Отправить
+            p.modal-request__message Ваша заявка успешно отправлена!

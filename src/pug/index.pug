@@ -7,19 +7,47 @@ html(lang="ru")
         title z-module_2
         include mixins
     body
-        include header
-        div.container
-            section.solution
-                div.solution__block
-                    h1.solution__title.title Создаем решения
-                    h2.solution__subtitle.title Для роста бизнеса
-                    p.solution__text На основе анализа данных с алгоритмами реализации
-                    button.solution__btn.btn Обсудить проблему
-                ul.solution__list
-                    +cubeListItems(['Как найти точки роста и определить цели?',
-                      'Как избежать проблем на старте нового бизнеса?',
-                      'Как увеличить прибыль, управляя ценами?',
-                      'Как не попасть в "черную дыру" затрат на продвижение?'])
-            section.services-links
-                h2.services-links__title.title Услуги
+        div.consultation
+            include sidebar
+            include modal-request
+            include header
+            div.container
+                section.consultation__inner
+                    div.consultation__block
+                        h1.consultation__title.title Создаем решения
+                        h2.consultation__subtitle.title Для роста бизнеса
+                        p.consultation__text На основе анализа данных с алгоритмами реализации
+                        button.consultation__btn.btn Обсудить проблему
+                    ul.consultation__list
+                        +cubeListItems(['Как найти точки роста и определить цели?',
+                          'Как избежать проблем на старте нового бизнеса?',
+                          'Как увеличить прибыль, управляя ценами?',
+                          'Как не попасть в "черную дыру" затрат на продвижение?'])
+                section.services-links
+                    h2.services-links__title.title Услуги
+
+                    div.row.puzzle-block
+                        div.col-sm-4.puzzle-block__first.puzzle-block-col
+                            a.puzzle-block__link(href='./training.html')
+                                img(src=require('../assets/images/icons/market-plan.svg'))
+                                p Разрабатываем маркетинг-план: дорожная карта достижения целей
+                        div.col-sm.col-12.puzzle-block__second
+                            div.row
+                                div.col-sm.col-12.puzzle-block__second-bottom.hidden-block.puzzle-block-col
+                                    a.puzzle-block__link(href='./training.html')
+                                        img(src=require('../assets/images/icons/market-plan.svg'))
+                                        p Разрабатываем маркетинг-план: дорожная карта достижения целей
+                                div.col-sm.col-12.puzzle-block__second-top.puzzle-block-col
+                                    a.puzzle-block__link(href='./training.html')
+                                        img(src=require('../assets/images/icons/bulb.svg'))
+                                        p Повышаем эффективность продвижения: аудит существующей модели
+                            div.row
+                                div.col-sm.col-12.puzzle-block__second-bottom.puzzle-block-col
+                                    a.puzzle-block__link(href='./training.html')
+                                        img(src=require('../assets/images/icons/analyze.svg'))
+                                        p Находим скрытую прибыль: анализ модели ценообразования
+                                div.col-sm.col-12.puzzle-block__second-bottom.puzzle-block-col
+                                    a.puzzle-block__link(href='./training.html')
+                                        img(src=require('../assets/images/icons/rocket.svg'))
+                                        p Запускаем новый проект: start-up маркетинг
         include footer

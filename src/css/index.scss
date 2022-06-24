@@ -3,12 +3,14 @@
 
 //modules
 @import 'modules/header';
-@import 'modules/solution';
+@import 'modules/consultation';
 @import 'modules/services';
 @import 'modules/footer';
 @import 'modules/breadcrumb';
 @import 'modules/training';
-@import 'modules/single-training';
+@import 'modules/training-list';
+@import 'modules/sidebar';
+@import 'modules/modal-request';
 
 //bootstrap
 @import '~bootstrap/scss/functions';
