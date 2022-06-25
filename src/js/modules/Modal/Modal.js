@@ -18,7 +18,7 @@ class Modal {
     Form.clear([username, email, textarea])
 
     this.modal.style = 'display: none'
-    document.body.classList.add('open-sidebar-js')
+    document.body.classList.remove('open-sidebar-js')
   }
 
   open = () => {

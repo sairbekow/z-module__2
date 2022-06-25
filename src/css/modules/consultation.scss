@@ -1,6 +1,12 @@
 .consultation {
   position: relative;
 
+  &__bg {
+    background-image: url('../assets/images/bg-solution.svg');
+    background-position: center 90px;
+    background-repeat: no-repeat;
+  }
+
   &__inner {
     padding: 91px 0 125px;
   }
@@ -48,7 +54,7 @@
       width: 381px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      gap: 41px;
 
       &:nth-child(odd) {
         margin-bottom: 76px;
@@ -86,7 +92,6 @@
 
   &__link {
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;

@@ -12,7 +12,7 @@ class ConsultationForm {
       .addEventListener('submit', (event) => {
         Form.submit(event, {
           message: this.message,
-          button: {element: this.button, text: "е "},
+          button: {element: this.button, text: "Получить консультацию"},
           fields: [this.username, this.email]
         })
       })

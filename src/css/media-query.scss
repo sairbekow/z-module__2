@@ -22,6 +22,20 @@
   }
 
   .consultation {
+    &__bg {
+      background-size: contain;
+      background-position: center 140px;
+
+    }
+
+    &__block {
+      padding-bottom: 185px;
+    }
+
+    &__inner {
+      padding-bottom: 80px;
+    }
+
     &__list {
       padding: 0;
 
@@ -50,9 +64,123 @@
     width: 720px;
   }
 
+
+  .consultation {
+    font-size: 16px;
+    line-height: 19px;
+
+    &__inner {
+      padding-bottom: 68px;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 6px;
+    }
+
+    &__text {
+      width: 300px;
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 4px;
+    }
+
+    &__bg {
+      background-image: url('../assets/images/bg-consultation-medium.svg');
+      background-position: center 32px;
+      background-repeat: no-repeat;
+    }
+
+    &__btn {
+      margin-top: 14px;
+    }
+
+    &__block {
+      padding-top: 34px;
+      padding-bottom: 99px;
+    }
+
+    &__list {
+      padding-left: 30px;
+
+      li {
+        gap: 28px;
+
+        span {
+          width: 230px;
+
+        }
+
+        &:nth-child(odd) {
+          margin-bottom: 48px;
+        }
+      }
+    }
+
+  }
+
+  .services-links {
+    padding-top: 0;
+    padding-bottom: 42px;
+
+    &__title {
+      margin-left: 35px;
+      margin-bottom: 46px;
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+
   .puzzle-block {
     &__first {
       display: none;
+    }
+
+    &__link:nth-child(1) {
+      img {
+        width: 68.74px;
+        height: 57.4px;
+      }
+    }
+
+    &-col {
+      min-height: 249px !important;
+    }
+
+    &__second {
+      &-bottom {
+      }
+      &-top a p {
+        margin: 0 auto;
+      }
+    }
+
+    &__link:nth-child(2) {
+      img {
+        width: 38px;
+        height: 60px;
+      }
+    }
+
+    &__link:nth-child(3) {
+      img {
+        width: 63px;
+        height: 60px;
+      }
+    }
+
+    &__link:nth-child(4) {
+      img {
+        width: 40px;
+        height: 72px;
+      }
     }
 
     .hidden-block {
@@ -121,24 +249,45 @@
     width: 540px;
   }
 
-  .services-links__title {
-    margin-left: 0;
-    margin-bottom: 50px;
+  .services-links {
+
+    &__title {
+      margin-left: 0;
+      margin-bottom: 23px;
+      margin-top: 100px;
+      text-align: center;
+    }
+  }
+
+  .btn {
+    font-size: 13px;
   }
 
   .consultation {
 
+    &__bg {
+      background-image: url('../assets/images/bg-consultation-small.svg');
+      background-position: center 32px;
+      background-repeat: no-repeat;
+      background-size: unset;
+    }
+
     &__block {
-      padding-bottom: 130px;
-      padding-top: 0;
+      padding-bottom: 191px;
+      padding-top: 203px;
       padding-left: 0;
+      text-align: center;
+    }
+
+    &__text {
+      margin: 16px auto 10px;
     }
 
     &__list {
       width: 100%;
       margin-bottom: 80px;
       flex-wrap: nowrap;
-      gap: 35px;
+      gap: 47px;
 
       li {
         width: 100%;
@@ -229,6 +378,12 @@
     }
   }
 
+  .form {
+    &__inner {
+      padding: 30px;
+    }
+  }
+
 
   .training-list {
     &__item {
@@ -288,6 +443,7 @@
   }
 
   .services {
+    font-size: 16px;
 
     &__list {
       padding-left: 10px;
@@ -299,6 +455,7 @@
 
     &__title {
       font-size: 32px;
+      line-height: 40px;
     }
 
     &-description {

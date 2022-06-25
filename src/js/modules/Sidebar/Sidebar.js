@@ -5,17 +5,17 @@ class Sidebar {
 
   initialize = () => {
     this.openBtn && this.openBtn.addEventListener('click', this.open)
-    this.closeBtn && this.openBtn.addEventListener('click', this.close)
+    this.closeBtn && this.closeBtn.addEventListener('click', this.close)
   }
 
   close = () => {
     this.sidebar.classList.remove('open-js')
-    document.body.classList.remove('.open-sidebar-js')
+    document.body.classList.remove('open-sidebar-js')
   }
 
   open = () => {
     this.sidebar.classList.add('open-js')
-    document.body.classList.add('.open-sidebar-js')
+    document.body.classList.add('open-sidebar-js')
   }
 }
 

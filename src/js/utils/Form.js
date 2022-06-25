@@ -1,24 +1,20 @@
 class Form {
-  static isAllFieldsValid = true
-
   static submit = (e, obj) => {
     e.preventDefault()
 
-    obj.fields.forEach(item => {
-      this.validate(item)
-    })
+    const isAllFieldsValid = obj.fields.every(item => this.validate(item))
 
     obj.message.style = 'opacity: 0'
 
-    if (this.isAllFieldsValid) {
-      obj.button.textContent = 'идет отправка...'
-      obj.button.disabled = true
-      obj.button.classList.add('disabled')
+    if (isAllFieldsValid) {
+      obj.button.element.textContent = 'идет отправка...'
+      obj.button.element.disabled = true
+      obj.button.element.classList.add('disabled')
 
       setTimeout(() => {
-        obj.button.textContent = button.text
-        obj.button.disabled = false
-        obj.button.classList.remove('disabled')
+        obj.button.element.textContent = obj.button.text
+        obj.button.element.disabled = false
+        obj.button.element.classList.remove('disabled')
 
         Form.clear(obj.fields)
 
@@ -28,30 +24,26 @@ class Form {
   }
 
   static validate = (field) => {
-    if (field) {
-      if (field.value.trim().length === 0) {
-        field.classList.add('wrong-field')
-        field.nextElementSibling.style = 'opacity: 1'
+    if (field.value.trim().length === 0) {
+      field.classList.add('wrong-field')
+      field.nextElementSibling.style = 'opacity: 1'
 
-        this.isAllFieldsValid = false
+      return false
 
-      } else {
-        field.classList.remove('wrong-field')
-        field.nextElementSibling.style = 'opacity: 0'
+    } else {
+      field.classList.remove('wrong-field')
+      field.nextElementSibling.style = 'opacity: 0'
 
-        this.isAllFieldsValid = true
-      }
+      return true
     }
   }
 
   static clear = (fields) => {
-    if (fields) {
-      fields.forEach(item => {
-        item.value = ''
-        item.nextElementSibling.style = 'opacity: 0'
-        item.classList.remove('wrong-field')
-      })
-    }
+    fields.forEach(item => {
+      item.value = ''
+      item.nextElementSibling.style = 'opacity: 0'
+      item.classList.remove('wrong-field')
+    })
   }
 }
 

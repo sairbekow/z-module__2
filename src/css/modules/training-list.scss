@@ -1,4 +1,7 @@
 .training-list {
+  background-image: url('../assets/images/bg-cube.svg');
+  background-repeat: no-repeat;
+  background-position: right 50px;
 
   &__inner {
     padding-top: 71px;
@@ -16,6 +19,7 @@
     padding: 39px 76px 37px 38px;
     box-shadow: 4px 4px 20px rgba(40, 44, 55, 0.2);
     border-radius: 20px;
+    background-color: #fff;
 
     &-inner {
       display: flex;

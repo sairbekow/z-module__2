@@ -1,6 +1,9 @@
 .training {
   font-size: 17px;
   line-height: 20px;
+  background-image: url('../assets/images/bg-cube.svg');
+  background-repeat: no-repeat;
+  background-position: right 50px;
 
   &__inner {
     padding-top: 71px;

@@ -56,6 +56,22 @@
   width: 120px;
   display: flex;
   justify-content: space-between;
+
+  &-item {
+    svg {
+      path {
+        transition-duration: 0.2s;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: #47CF34;
+        }
+      }
+    }
+  }
 }
 
 .burger {

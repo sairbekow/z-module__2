@@ -12,7 +12,7 @@ class ModalForm {
     this.form && this.form.addEventListener('submit', (event) => {
       Form.submit(event, {
         message: this.message,
-        button: this.button,
+        button: {element: this.button, text: "Отправить"},
         fields: [this.username, this.email, this.textarea],
       })
     })
