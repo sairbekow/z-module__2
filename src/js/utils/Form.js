@@ -2,7 +2,13 @@ class Form {
   static submit = (e, obj) => {
     e.preventDefault()
 
-    const isAllFieldsValid = obj.fields.every(item => this.validate(item))
+    let isAllFieldsValid = true
+
+    obj.fields.forEach(item => {
+      if(!this.validate(item)) {
+        isAllFieldsValid = false
+      }
+    })
 
     obj.message.style = 'opacity: 0'
 

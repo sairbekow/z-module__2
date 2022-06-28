@@ -11,24 +11,29 @@ mixin formElement
             p.form__message Ваша заявка успешно отправлена!
 
 mixin pointListItems(values)
-    each value in values
-        li.point-list__item
-            img(src=require('../assets/images/icons/point.svg'))
-            span= value
+  each value in values
+      li.point-list__item
+          img(src=require('../assets/images/icons/point.svg'))
+          span= value
 
 
 mixin cubeListItems(values)
-    each value in values
-        li.cube-list__item
-            img(src=require('../assets/images/icons/small-cube.svg'))
-            span= value
+  each value in values
+      li.cube-list__item
+          img(src=require('../assets/images/icons/small-cube.svg'))
+          span= value
 
 mixin breadcrumb(values)
     div.breadcrumb
-        each value in values
-              div.breadcrumb__item= value
+      each value in values
+          if value === values[0]
+              a.breadcrumb__item(href='./')= value
                   if value !== values[values.length - 1]
-                    span /
+                      span /
+          else
+              a.breadcrumb__item= value
+                  if value !== values[values.length - 1]
+                      span /
 
 
 
