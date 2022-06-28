@@ -83,6 +83,13 @@ module.exports = {
         type: 'asset/resource',
       },
       {
+        test: /\.(woff|woff2)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name][ext][query]'
+        }
+      },
+      {
         test: /\.html$/i,
         loader: "html-loader",
       },
